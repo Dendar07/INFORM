@@ -1,1 +1,81 @@
 # INFORM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Diri Siswa SMK TZU CHI</h1>  
+        <hr>
+        <form name="form">
+            <p>NIS : <input type="number" size="12" name="nisn" required></p>
+            <p>Nama : <input type="text" size="20" name="nama" required></p>
+            <p>Alamat : <input type="text" size="30" name="alamat" required></p>
+            <p>Jenis Kelamin : 
+                <select name="jenis_kelamin">
+                    <option>-- Pilih --</option>
+                    <option>Perempuan</option>
+                    <option>Laki-Laki</option>
+                </select>
+            </p>
+            <p>Agama : 
+                <select name="agama">
+                    <option>-- Pilih --</option>
+                    <option>Islam</option>
+                    <option>Kristen</option>
+                    <option>Protestan</option>
+                    <option>Hindu</option>
+                    <option>Budha</option>
+                    <option>Konghucu</option>
+                </select>
+            </p>
+            <p>Status : 
+                <input type="checkbox" value="on" name="belum_menikah">Belum menikah
+                <input type="checkbox" value="on" name="sudah_menikah">Sudah Menikah
+            </p>
+            <p>Jurusan : 
+                <select name="jurusan">
+                    <option>-- Pilih --</option>
+                    <option>RPL</option>
+                    <option>AKUNTANSI</option>
+                    <option>MPLB</option>
+                </select>
+            </p>
+                <p>Komentar : <textarea name="Ket" rows="3" cols="30"></textarea></p>
+
+            <!-- BUTTON -->
+            <div class="btn">
+                <input type="button" value="kirim" class="btn-send" onclick="tekan()">
+                <input type="reset" value="ulang" class="btn-reset">
+            </div><br><br><br>
+
+
+         <!-- output -->
+
+
+            <h1>Data Diri Siswa SMK TZU CHI</h1><hr>
+            <p>Nis : <input type="number" size="12" name="nis"></p>
+            <p>Nama : <input type="text" size="20" name="name"></p>
+            <p>Alamat : <input type="text" size="30" name="address"></p>
+            <p>Jenis Kelamin : <span id="jenis_kelamin_result"></span></p>
+            <p>Agama : <span id="agama_result"></span></p>
+            <p>Status : 
+                <input type="checkbox" value="on" name="belum_menikah_result">Belum menikah
+                <input type="checkbox" value="on" name="sudah_menikah_result">Sudah Menikah
+                </p>
+            <p>Jurusan : <span id="jurusan_result"></span>
+            </p>
+                <p>Komentar : <textarea name="Oket" rows="3" cols="30"></textarea></p>
+        </form>
+        <br><br>
+            <footer>
+        <p><strong>Created by <a href="">Denky Sudarto</a>. | &copy; 2023.</strong></p>
+    </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
